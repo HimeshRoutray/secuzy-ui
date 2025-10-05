@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/secuzy-security/static/css/main.90baf451.css",
-    "main.js": "/secuzy-security/static/js/main.c30de0f6.js",
-    "static/media/gatedSociety.png": "/secuzy-security/static/media/gatedSociety.073181b709b93f0e7cbd.png",
-    "static/media/mall.png": "/secuzy-security/static/media/mall.e6a98801af6e06a34eb2.png",
-    "static/media/vipEscort.png": "/secuzy-security/static/media/vipEscort.6eb34610ddf983014b4c.png",
-    "static/media/corporate.png": "/secuzy-security/static/media/corporate.da54cf1ceea6ae1c49e0.png",
-    "static/media/industrial.png": "/secuzy-security/static/media/industrial.97ca5688797e83c3fe2d.png",
-    "static/media/logoSecuzy.jpg": "/secuzy-security/static/media/logoSecuzy.e388485b4a75f379f081.jpg",
-    "index.html": "/secuzy-security/index.html",
-    "main.90baf451.css.map": "/secuzy-security/static/css/main.90baf451.css.map",
-    "main.c30de0f6.js.map": "/secuzy-security/static/js/main.c30de0f6.js.map"
+    "main.css": "/secuzy-ui/static/css/main.90baf451.css",
+    "main.js": "/secuzy-ui/static/js/main.e153c93a.js",
+    "static/media/gatedSociety.png": "/secuzy-ui/static/media/gatedSociety.073181b709b93f0e7cbd.png",
+    "static/media/mall.png": "/secuzy-ui/static/media/mall.e6a98801af6e06a34eb2.png",
+    "static/media/vipEscort.png": "/secuzy-ui/static/media/vipEscort.6eb34610ddf983014b4c.png",
+    "static/media/corporate.png": "/secuzy-ui/static/media/corporate.da54cf1ceea6ae1c49e0.png",
+    "static/media/industrial.png": "/secuzy-ui/static/media/industrial.97ca5688797e83c3fe2d.png",
+    "static/media/logoSecuzy.jpg": "/secuzy-ui/static/media/logoSecuzy.e388485b4a75f379f081.jpg",
+    "index.html": "/secuzy-ui/index.html",
+    "main.90baf451.css.map": "/secuzy-ui/static/css/main.90baf451.css.map",
+    "main.e153c93a.js.map": "/secuzy-ui/static/js/main.e153c93a.js.map"
   },
   "entrypoints": [
     "static/css/main.90baf451.css",
-    "static/js/main.c30de0f6.js"
+    "static/js/main.e153c93a.js"
   ]
 }
