@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/secuzy-ui/static/css/main.90baf451.css",
-    "main.js": "/secuzy-ui/static/js/main.e153c93a.js",
+    "main.js": "/secuzy-ui/static/js/main.6bee0b72.js",
     "static/media/gatedSociety.png": "/secuzy-ui/static/media/gatedSociety.073181b709b93f0e7cbd.png",
     "static/media/mall.png": "/secuzy-ui/static/media/mall.e6a98801af6e06a34eb2.png",
     "static/media/vipEscort.png": "/secuzy-ui/static/media/vipEscort.6eb34610ddf983014b4c.png",
     "static/media/corporate.png": "/secuzy-ui/static/media/corporate.da54cf1ceea6ae1c49e0.png",
     "static/media/industrial.png": "/secuzy-ui/static/media/industrial.97ca5688797e83c3fe2d.png",
+    "static/media/bgImage2.png": "/secuzy-ui/static/media/bgImage2.97b2b65fb1aad447e31f.png",
     "static/media/logoSecuzy.jpg": "/secuzy-ui/static/media/logoSecuzy.e388485b4a75f379f081.jpg",
     "index.html": "/secuzy-ui/index.html",
     "main.90baf451.css.map": "/secuzy-ui/static/css/main.90baf451.css.map",
-    "main.e153c93a.js.map": "/secuzy-ui/static/js/main.e153c93a.js.map"
+    "main.6bee0b72.js.map": "/secuzy-ui/static/js/main.6bee0b72.js.map"
   },
   "entrypoints": [
     "static/css/main.90baf451.css",
-    "static/js/main.e153c93a.js"
+    "static/js/main.6bee0b72.js"
   ]
 }
