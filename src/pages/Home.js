@@ -1,6 +1,7 @@
 // src/pages/Home.js
 import React from "react";
 import Card from "../components/ServiceCard";
+import bgImage from "../assets/bgImage2.png"
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -41,7 +42,7 @@ export default function Home() {
       <section
         className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: "url('/bgImage2.png')",
+          backgroundImage: `url(${bgImage})`,
           backgroundPosition: "center",
         }}
       >
