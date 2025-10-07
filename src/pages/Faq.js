@@ -23,14 +23,14 @@ const faqs = [
   },
 ];
 
-export default function About() {
+export default function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
     <div className="container mx-auto py-12 px-4">
       {/* Hero Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-primary mb-4">About Secuzy</h1>
+        <h1 className="text-4xl font-bold text-primary mb-4">Common Query Clarification</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Established with a vision to redefine security services in India, Secuzy has grown into a trusted partner for businesses, communities, and individuals looking for high-end security solutions.
         </p>

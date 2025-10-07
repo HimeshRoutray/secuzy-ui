@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Contact() {
   return (
     <div className="container mx-auto py-12 px-4">
@@ -28,13 +26,6 @@ export default function Contact() {
           <p className="text-gray-600">Email: [Your Email]</p>
           <p className="text-gray-600">Website: [Your Website]</p>
         </div>
-      </div>
-
-      {/* Support Button */}
-      <div className="text-center mt-12">
-        <button className="bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition">
-          Contact Support
-        </button>
       </div>
     </div>
   );
