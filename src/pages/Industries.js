@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import Card from "../components/ServiceCard";
 import corporateImg from "../assets/corporate.png";
 import gatedSocietyImg from "../assets/gatedSociety.png";
 import mallImg from "../assets/mall.png";
@@ -36,7 +34,6 @@ const industries = [
 ];
 
 export default function Industries() {
-  const [selected, setSelected] = useState(null);
   const navigate = useNavigate();
 
   return (
@@ -49,30 +46,24 @@ export default function Industries() {
         {industries.map((ind, idx) => (
           <div
             key={idx}
-            className="relative rounded-xl overflow-hidden shadow-lg cursor-pointer group"
-            onClick={() => setSelected(selected === idx ? null : idx)}
+            className="relative rounded-xl overflow-hidden shadow-lg cursor-pointer group transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             {/* Image */}
             <img
               src={ind.img}
               alt={ind.title}
-              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
 
             {/* Title */}
-            <div className="absolute bottom-0 bg-black bg-opacity-60 w-full text-white text-center py-2 text-lg font-semibold">
+            <div className="absolute bottom-0 bg-black bg-opacity-60 w-full text-white text-center py-2 text-lg font-semibold z-10">
               {ind.title}
             </div>
 
-            {/* Overlay with description */}
-            {selected === idx && (
-              <div
-                className="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-6 py-4 transition-opacity duration-300"
-                onClick={() => setSelected(null)}
-              >
-                <p className="text-sm leading-relaxed">{ind.desc}</p>
-              </div>
-            )}
+            {/* Hover Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center text-center text-white px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              <p className="text-sm leading-relaxed">{ind.desc}</p>
+            </div>
           </div>
         ))}
       </div>
