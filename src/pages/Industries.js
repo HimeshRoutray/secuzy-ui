@@ -1,4 +1,3 @@
-// src/pages/Industries.js
 import React, { useState } from "react";
 import Card from "../components/ServiceCard";
 import corporateImg from "../assets/corporate.png";

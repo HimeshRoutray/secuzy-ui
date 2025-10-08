@@ -1,5 +1,3 @@
-// src/components/DetailedServiceCard.js
-
 export default function DetailedServiceCard({ title, desc }) {
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between">
