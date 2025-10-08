@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/secuzy-ui/static/css/main.e6c13ad2.css",
-    "main.js": "/secuzy-ui/static/js/main.2b36106d.js",
+    "main.js": "/secuzy-ui/static/js/main.3e3bf871.js",
     "static/media/missionImage.png": "/secuzy-ui/static/media/missionImage.87ebbac9ff5e5880b569.png",
     "static/media/gatedSociety.png": "/secuzy-ui/static/media/gatedSociety.073181b709b93f0e7cbd.png",
     "static/media/mall.png": "/secuzy-ui/static/media/mall.e6a98801af6e06a34eb2.png",
@@ -13,10 +13,10 @@
     "static/media/logoSecuzy.jpg": "/secuzy-ui/static/media/logoSecuzy.e388485b4a75f379f081.jpg",
     "index.html": "/secuzy-ui/index.html",
     "main.e6c13ad2.css.map": "/secuzy-ui/static/css/main.e6c13ad2.css.map",
-    "main.2b36106d.js.map": "/secuzy-ui/static/js/main.2b36106d.js.map"
+    "main.3e3bf871.js.map": "/secuzy-ui/static/js/main.3e3bf871.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2b36106d.js"
+    "static/js/main.3e3bf871.js"
   ]
 }
