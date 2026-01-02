@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import DetailedServiceCard from "../components/DetailedServiceCard";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -106,21 +107,74 @@ export default function Services() {
 
   return (
     <div className="container mx-auto py-16 px-6">
-      <h2 className="text-3xl font-bold text-center text-primary mb-10">
-        Our Security Services
-      </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* ================= SEO META ================= */}
+      <Helmet>
+        <title>
+          Security Services in Bangalore | Manned Guarding, Corporate & Event Security | Secuzy
+        </title>
+
+        <meta
+          name="description"
+          content="Secuzy Security offers professional security services in Bangalore including manned guarding, corporate security, residential security, retail & mall security, event security, and VIP protection."
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.secuzysecurity.com/services"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Security Services | Secuzy Security" />
+        <meta
+          property="og:description"
+          content="Professional security services including manned guarding, corporate security, residential protection, mall security, event security, and VIP protection."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.secuzysecurity.com/services" />
+        <meta property="og:image" content="/og-services.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Security Services by Secuzy" />
+        <meta
+          name="twitter:description"
+          content="Trusted security solutions for corporates, residences, malls, events, and VIPs."
+        />
+      </Helmet>
+      {/* ================= END SEO ================= */}
+
+      {/* Page Header */}
+      <header className="text-center mb-10">
+        <h1 className="text-3xl font-bold text-primary mb-4">
+          Our Security Services
+        </h1>
+        <p className="text-gray-600 max-w-3xl mx-auto">
+          Secuzy Security delivers end-to-end security services designed to
+          protect people, property, and operations across industries.
+        </p>
+      </header>
+
+      {/* Services Grid */}
+      <section
+        aria-label="Security services offered by Secuzy"
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
         {services.map((s, idx) => (
-          <DetailedServiceCard key={idx} title={s.title} desc={s.desc} />
+          <article key={idx}>
+            <DetailedServiceCard title={s.title} desc={s.desc} />
+          </article>
         ))}
-      </div>
+      </section>
 
       {/* CTA Section */}
-      <div className="text-center mt-16 bg-gray-50 p-8 rounded-xl shadow-md">
-        <h3 className="text-2xl font-bold text-primary mb-4">
+      <section
+        aria-label="Contact Secuzy for security consultation"
+        className="text-center mt-16 bg-gray-50 p-8 rounded-xl shadow-md"
+      >
+        <h2 className="text-2xl font-bold text-primary mb-4">
           Need a Custom Security Plan?
-        </h3>
+        </h2>
         <p className="text-gray-600 mb-6">
           Every client’s security requirements are unique. Let us design a
           tailored protection strategy that fits your specific needs.
@@ -131,7 +185,7 @@ export default function Services() {
         >
           Contact Us for a Free Consultation
         </button>
-      </div>
+      </section>
     </div>
   );
 }

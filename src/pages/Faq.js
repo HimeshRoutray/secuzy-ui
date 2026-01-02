@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const faqs = [
   {
@@ -15,7 +16,7 @@ const faqs = [
   },
   {
     q: "How can I hire security services for my business or residence?",
-    a: "Simply call us at [Contact Number], or email us at [Email Address].",
+    a: "Simply call us at 76196 02836 or email us at enquiry@secuzysecurity.com.",
   },
   {
     q: "What technology do you use for security monitoring?",
@@ -26,36 +27,99 @@ const faqs = [
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
 
+  // JSON-LD for FAQ rich results
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a,
+      },
+    })),
+  };
+
   return (
     <div className="container mx-auto py-12 px-4">
+      <Helmet>
+        {/* Primary SEO */}
+        <title>
+          Security Services FAQ | Secuzy Security Private Limited
+        </title>
+
+        <meta
+          name="description"
+          content="Find answers to common questions about Secuzy Security services including guard training, 24/7 security, customized security plans, and surveillance technology."
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.secuzysecurity.com/faq"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="FAQs | Secuzy Security Services" />
+        <meta
+          property="og:description"
+          content="Answers to common questions about professional security services offered by Secuzy Security Private Limited."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.secuzysecurity.com/faq" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-primary mb-4">Common Query Clarification</h1>
+        <h1 className="text-4xl font-bold text-primary mb-4">
+          Security Services – Frequently Asked Questions
+        </h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Established with a vision to redefine security services in India, Secuzy has grown into a trusted partner for businesses, communities, and individuals looking for high-end security solutions.
+          Get clear answers to common questions about Secuzy Security’s
+          professional guarding services, surveillance technology, and
+          customized security solutions.
         </p>
       </div>
 
       {/* FAQ Section */}
-      <div className="bg-gray-50 p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-primary mb-6">Frequently Asked Questions</h2>
+      <section
+        aria-label="Frequently Asked Questions about Secuzy Security Services"
+        className="bg-gray-50 p-8 rounded-lg shadow-md"
+      >
+        <h2 className="text-2xl font-bold text-primary mb-6">
+          Frequently Asked Questions
+        </h2>
+
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
             <div key={idx} className="border-b pb-4">
               <button
                 className="w-full flex justify-between items-center text-left"
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+                aria-expanded={openIndex === idx}
               >
-                <span className="font-semibold text-lg">{faq.q}</span>
-                <span className="text-accent">{openIndex === idx ? "−" : "+"}</span>
+                <span className="font-semibold text-lg">
+                  {faq.q}
+                </span>
+                <span className="text-accent text-2xl">
+                  {openIndex === idx ? "−" : "+"}
+                </span>
               </button>
+
               {openIndex === idx && (
-                <p className="mt-2 text-gray-600">{faq.a}</p>
+                <p className="mt-2 text-gray-600 leading-relaxed">
+                  {faq.a}
+                </p>
               )}
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 }
