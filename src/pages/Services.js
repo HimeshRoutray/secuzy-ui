@@ -44,7 +44,7 @@ const services = [
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-1">
           <li>Trained security guards for apartment complexes & villas</li>
-          <li>CCTV monitoring & AI-based threat detection</li>
+          <li>CCTV monitoring</li>
           <li>Emergency response services</li>
         </ul>
       </>

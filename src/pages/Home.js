@@ -176,7 +176,7 @@ export default function Home() {
         <h3 className="text-3xl font-bold text-center mb-10 text-primary">
           Why Choose Us?
         </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           {whyChooseUs.map((item, idx) => (
             <Card
               key={idx}
